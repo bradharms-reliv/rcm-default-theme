@@ -1,0 +1,27 @@
+<?php
+$guestTopNav = $this->rcmContainer()->renderContainer('guestTopNavigation');
+$guestMainNavigation = $this->rcmContainer()->renderContainer(
+    'guestMainNavigation'
+);
+$guestSearch = $this->rcmContainer()->renderContainer('guestSearch');
+$guestRightColumn = $this->rcmContainer()->renderContainer('guestRightColumn');
+$guestFooter = $this->rcmContainer()->renderContainer('guestFooter');
+
+$this->rcmJsLibIncludeCoreJs();
+$this->rcmIncludeJqueryUi();
+
+$this->headLink()->appendStylesheet(
+    $this->basePath() . '/modules/reliv-default-theme/theme.css',
+    'screen,print'
+);
+
+echo $this->doctype();
+?>
+<html>
+<head>
+    <meta charset="utf-8">
+    <?= $this->headTitle($this->metaTitle) ?>
+    <?= $this->headMeta() ?>
+    <?= $this->headLink() ?>
+    <?= $this->headScript() ?>
+</head>

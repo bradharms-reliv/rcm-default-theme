@@ -1,0 +1,6 @@
+<?php
+if (!empty($this->pageInfo['pageTitle'])) {
+    $this->headTitle()->prepend($this->pageInfo['pageTitle']);
+}
+?>
+<?= $this->rcmContainer()->renderPageContainer(4); ?>
