@@ -1,0 +1,28 @@
+{
+  "name": "reliv/rcm-default-theme",
+  "description": "Rcm Default Theme",
+  "type": "library",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "rcm",
+    "module",
+    "zf2",
+    "theme"
+  ],
+  "minimum-stability": "stable",
+  "homepage": "https://github.com/reliv/rcm-default-theme",
+  "authors": [
+    {
+      "name": "James Jervis",
+      "email": "jjervis@relivinc.com",
+      "homepage": "https://github.com/reliv"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "zendframework/zendframework": "2.*",
+    "reliv/rcm": "0.*",
+    "rwoverdijk/assetmanager": "1.*",
+    "reliv/rcm-i18n": ">=0.2.3"
+  }
+}
