@@ -23,7 +23,7 @@ return [
                     'default' => [
                         'display' => 'Interior Page',
                         'file' => 'page.phtml',
-                        'screenShot' => '/modules/reliv-default-theme/images/admin/page.png',
+                        'screenShot' => '/modules/rcm-default-theme/images/admin/page.png',
                         'hidden' => true,
                     ],
                 ]
@@ -34,11 +34,11 @@ return [
     'asset_manager' => [
         'resolver_configs' => [
             'aliases' => [
-                'modules/reliv-default-theme/' => __DIR__ . '/../public/',
+                'modules/rcm-default-theme/' => __DIR__ . '/../public/',
             ],
             'collections' => [
                 'modules/rcm-default-theme/theme.css' => [
-                    'modules/reliv-default-theme/css/style.css',
+                    'modules/rcm-default-theme/css/style.css',
                 ],
             ],
         ],

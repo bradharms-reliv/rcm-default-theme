@@ -1,8 +1,6 @@
 <?php
 $topNav = $this->rcmContainer()->renderContainer('topNavigation');
-$mainNavigation = $this->rcmContainer()->renderContainer(
-    'guestMainNavigation'
-);
+$mainNavigation = $this->rcmContainer()->renderContainer('mainNavigation');
 $search = $this->rcmContainer()->renderContainer('search');
 $rightColumn = $this->rcmContainer()->renderContainer('rightColumn');
 $footer = $this->rcmContainer()->renderContainer('footer');
@@ -11,7 +9,7 @@ $this->rcmJsLibIncludeCoreJs();
 $this->rcmIncludeJqueryUi();
 
 $this->headLink()->appendStylesheet(
-    $this->basePath() . '/modules/reliv-default-theme/css/theme.css',
+    $this->basePath() . '/modules/rcm-default-theme/css/theme.css',
     'screen,print'
 );
 
