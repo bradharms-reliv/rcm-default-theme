@@ -1,17 +1,17 @@
 <?php
-$guestTopNav = $this->rcmContainer()->renderContainer('guestTopNavigation');
-$guestMainNavigation = $this->rcmContainer()->renderContainer(
+$topNav = $this->rcmContainer()->renderContainer('topNavigation');
+$mainNavigation = $this->rcmContainer()->renderContainer(
     'guestMainNavigation'
 );
-$guestSearch = $this->rcmContainer()->renderContainer('guestSearch');
-$guestRightColumn = $this->rcmContainer()->renderContainer('guestRightColumn');
-$guestFooter = $this->rcmContainer()->renderContainer('guestFooter');
+$search = $this->rcmContainer()->renderContainer('search');
+$rightColumn = $this->rcmContainer()->renderContainer('rightColumn');
+$footer = $this->rcmContainer()->renderContainer('footer');
 
 $this->rcmJsLibIncludeCoreJs();
 $this->rcmIncludeJqueryUi();
 
 $this->headLink()->appendStylesheet(
-    $this->basePath() . '/modules/reliv-default-theme/theme.css',
+    $this->basePath() . '/modules/reliv-default-theme/css/theme.css',
     'screen,print'
 );
 

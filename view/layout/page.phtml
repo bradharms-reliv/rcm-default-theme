@@ -1,4 +1,4 @@
-<?php include __DIR__ . '/header.phtml' ?>
+<?php require __DIR__ . '/header.phtml' ?>
 
 <body>
 <?= $this->rcmAdminPanel; ?>
@@ -6,77 +6,33 @@
     <div id="sitewrapper">
 
         <div id="topNavigation">
-            <?= $guestTopNav ?>
+            <?= $topNav ?>
         </div>
-
-        <div id="mainNavigation">
-            <?= $guestMainNavigation ?>
-        </div>
-
 
         <div id="mainBody">
-            <div id="leftColumn"></div>
+            <div id="leftColumn">
+                <?= $leftColumn ?>
+            </div>
 
             <div id="centerColumn">
                 <?= $this->content; ?>
             </div>
 
             <div id="rightColumn">
-                <?= $guestRightColumn ?>
+                <?= $rightColumn ?>
             </div>
         </div>
-    </div>
 
-    <div id="footer">
-        <div id="mainFooter">
-            <?= $guestFooter ?>
+        <div id="footer">
+            <div id="mainFooter">
+                <?= $footer ?>
+            </div>
         </div>
     </div>
 
     <!--Required CMS Body Bottom-->
     <?= $this->rcmBottom; ?>
 
-    <?php if (
-        !empty($_SERVER['HTTP_HOST'])
-        && stripos(
-            $_SERVER['HTTP_HOST'],
-            'staging'
-        ) === false
-        && stripos(
-            $_SERVER['HTTP_HOST'],
-            'test'
-        ) === false
-        && stripos(
-            $_SERVER['HTTP_HOST'],
-            'dev'
-        ) === false
-        && stripos(
-            $_SERVER['HTTP_HOST'],
-            'local'
-        ) === false
-    ) {
-        ?>
-
-        <script type="text/javascript">
-
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-12357964-1']);
-            _gaq.push(['_setDomainName', '<?=  $_SERVER['HTTP_HOST'] ?>']);
-            _gaq.push(['_setAllowLinker', true]);
-            _gaq.push(['_trackPageview']);
-
-            (function () {
-                var ga = document.createElement('script');
-                ga.type = 'text/javascript';
-                ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(ga, s);
-            })();
-
-        </script>
-
-    <?php } ?>
 <!--[if lt IE 9]><script type="text/javascript" src="/modules/rcm-twitter-bootstrap/html5shiv/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script type="text/javascript" src="/modules/rcm-twitter-bootstrap/bootstrap/js/respond/respond.min.js"></script><![endif]-->
 </body>
