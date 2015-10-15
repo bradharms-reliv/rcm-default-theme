@@ -26,7 +26,72 @@ return [
                         'screenShot' => '/modules/rcm-default-theme/images/admin/page.png',
                         'hidden' => true,
                     ],
-                ]
+                ],
+
+                'defaults' => array(
+                    'containers' => [
+                        'header' => array(
+                            'RcmHtmlArea' => array(
+                                'renderOrder'    => 0,
+                                'row'            => 0,
+                                'instanceConfig' => array(
+                                    'html' => '<p>This is a header</p>'
+                                )
+                            )
+                        ),
+                        'navigation' => array(
+                            'RcmDynamicNavigation' => array(
+                                'renderOrder'    => 0,
+                                'row'            => 0,
+                                'instanceConfig' => array(
+                                    'links' => array(
+                                        'href' => "/",
+                                        'display' => 'Home',
+                                    )
+                                )
+                            )
+                        ),
+                        'footer' => array(
+                            'RcmHtmlArea' => array(
+                                'renderOrder'    => 0,
+                                'row'            => 0,
+                                'instanceConfig' => array(
+                                    'html' => '<p>This is a footer</p>'
+                                )
+                            )
+                        ),
+                    ],
+                    'pages' => array(
+                        'index' => array(
+                            'pageLayout' => 'default',
+                            'pageTitle' => 'Welcome',
+                            'containers' => array(
+                                'body' => array(
+                                    'RcmHtmlArea' => array(
+                                        'renderOrder'    => 0,
+                                        'row'            => 0,
+                                        'instanceConfig' => array(
+                                            'html' => '<p>This is a the body</p>'
+                                        )
+                                    )
+                                )
+                            )
+                        ),
+                        'login' => array(
+                            'pageLayout' => 'default',
+                            'pageTitle' => 'Welcome',
+                            'containers' => array(
+                                'body' => array(
+                                    'RcmLogin' => array(
+                                        'renderOrder'    => 0,
+                                        'row'            => 0,
+                                        'instanceConfig' => array()
+                                    )
+                                )
+                            )
+                        )
+                    )
+                )
             ]
         ],
     ],
