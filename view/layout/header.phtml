@@ -1,12 +1,14 @@
 <?php
-$topNav = $this->rcmContainer()->renderContainer('topNavigation');
-$mainNavigation = $this->rcmContainer()->renderContainer('mainNavigation');
-$search = $this->rcmContainer()->renderContainer('search');
+$header = $this->rcmContainer()->renderContainer('header');
+$navigation = $this->rcmContainer()->renderContainer('navigation');
+$leftColumn = $this->rcmContainer()->renderContainer('leftColumn');
 $rightColumn = $this->rcmContainer()->renderContainer('rightColumn');
 $footer = $this->rcmContainer()->renderContainer('footer');
 
-$this->rcmJsLibIncludeCoreJs();
-$this->rcmIncludeJqueryUi();
+//$this->rcmJsLibIncludeCoreJs();
+//$this->rcmIncludeJqueryUi();
+
+$this->rcmHtmlIncludes();
 
 $this->headLink()->appendStylesheet(
     $this->basePath() . '/modules/rcm-default-theme/css/theme.css',
