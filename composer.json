@@ -24,4 +24,10 @@
     "rcm/core": "0.*",
     "rwoverdijk/assetmanager": "1.*"
   }
+
+  "autoload": {
+    "psr-4": {
+      "Rcm\\DefaultTheme\\": "src/",
+    }
+  }
 }
