@@ -21,7 +21,7 @@
   "require": {
     "php": ">=5.5",
     "zendframework/zendframework": "2.*",
-    "reliv/rcm": "0.*",
+    "rcm/core": "0.*",
     "rwoverdijk/assetmanager": "1.*"
   }
 }
