@@ -2,7 +2,7 @@
 /**
  * Module Config For ZF2
  */
-namespace Reliv\RcmDefaultTheme;
+namespace Rcm\DefaultTheme;
 
 /**
  * ZF2 Module Config.  Required by ZF2
