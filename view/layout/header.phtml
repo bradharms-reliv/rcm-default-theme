@@ -5,8 +5,10 @@ $leftColumn = $this->rcmContainer()->renderContainer('leftColumn');
 $rightColumn = $this->rcmContainer()->renderContainer('rightColumn');
 $footer = $this->rcmContainer()->renderContainer('footer');
 
-$this->rcmJsLibIncludeCoreJs();
-$this->rcmIncludeJqueryUi();
+//$this->rcmJsLibIncludeCoreJs();
+//$this->rcmIncludeJqueryUi();
+
+$this->rcmHtmlIncludes();
 
 $this->headLink()->appendStylesheet(
     $this->basePath() . '/modules/rcm-default-theme/css/theme.css',

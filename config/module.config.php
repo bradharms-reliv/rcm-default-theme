@@ -45,8 +45,10 @@ return [
                                 'row'            => 0,
                                 'instanceConfig' => array(
                                     'links' => array(
-                                        'href' => "/",
-                                        'display' => 'Home',
+                                        array(
+                                            'href' => "/",
+                                            'display' => 'Home',
+                                        ),
                                     )
                                 )
                             )
@@ -83,6 +85,32 @@ return [
                             'containers' => array(
                                 'body' => array(
                                     'RcmLogin' => array(
+                                        'renderOrder'    => 0,
+                                        'row'            => 0,
+                                        'instanceConfig' => array()
+                                    )
+                                )
+                            )
+                        ),
+                        'reset-password' => array(
+                            'pageLayout' => 'default',
+                            'pageTitle' => 'Welcome',
+                            'containers' => array(
+                                'body' => array(
+                                    'RcmResetPassword' => array(
+                                        'renderOrder'    => 0,
+                                        'row'            => 0,
+                                        'instanceConfig' => array()
+                                    )
+                                )
+                            )
+                        ),
+                        'reset-password' => array(
+                            'pageLayout' => 'default',
+                            'pageTitle' => 'Welcome',
+                            'containers' => array(
+                                'body' => array(
+                                    'RcmCreateNewPassword' => array(
                                         'renderOrder'    => 0,
                                         'row'            => 0,
                                         'instanceConfig' => array()
