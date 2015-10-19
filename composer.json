@@ -27,7 +27,7 @@
 
   "autoload": {
     "psr-4": {
-      "Rcm\\DefaultTheme\\": "src/",
+      "Rcm\\DefaultTheme\\": "src/"
     }
   }
 }
